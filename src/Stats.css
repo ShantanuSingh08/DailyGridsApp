@@ -1,0 +1,95 @@
+.focus-time-stats {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .focus-time-stats p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .stats-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .focus-time-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .stats-text {
+    flex: 1;
+    padding: 20px;
+    padding-top: 20%;
+  }
+  
+  .charts {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    padding-right: 120px;
+  }
+  
+  .WeeklyGoal{
+    padding-top: 30%;
+  }
+  .progress-container {
+    position: absolute;
+    bottom: 20px; 
+    left: 280px;   
+    width: 300px; 
+    height: 30px; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 5px; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    border-radius: 5px; 
+  }
+  
+  .progress-bar.goal {
+    background-color: rgba(75, 192, 192, 1);
+    position: relative; 
+  }
+  
+  .progress-bar.remaining {
+    background-color: rgba(255, 99, 132, 0.5); 
+  }
+  
+  .goal-met {
+    position: absolute;
+    top: 10px; 
+    bottom: 20px;
+    right: 116.5px;
+    background-color: rgba(75, 192, 192, 0.8);
+    color: #fff;
+    border: none;
+    padding-left: 45px;
+    padding-right: 61px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .goal-met:hover{
+    background-color: rgba(137, 43, 226, 0.753);
+  }
+  #Weekly{
+    font-size: 14px;
+    padding-left: 5%;
+  }
+  

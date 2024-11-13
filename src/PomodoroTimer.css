@@ -1,0 +1,75 @@
+.pomodoro-timer {
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Arial', sans-serif; /* Updated font for better aesthetics */
+  padding: 20px; /* Added padding for better spacing */
+}
+
+.pomodoro-timer-content {
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Arial', sans-serif; /* Updated font for better aesthetics */
+  padding-top: 15%; /* Added padding for better spacing */
+}
+
+.timer-display h1 {
+  font-size: 60px; /* Increased font size for better visibility */
+  margin: 20px 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Added shadow for depth */
+}
+
+.timer-controls {
+  display: flex;
+  justify-content: center; /* Center buttons */
+  margin-top: 20px; /* Add space above the controls */
+}
+
+.timer-controls button {
+  margin: 0 10px; /* Adjusted margin for better spacing */
+  padding: 12px 24px; /* Increased padding for a more substantial button */
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #4caf50; /* Primary color */
+  color: white;
+  border-radius: 5px; /* Slightly larger border radius */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.timer-controls button:hover {
+  background-color: #45a049; /* Darker shade on hover */
+}
+
+.timer-controls button:disabled {
+  background-color: rgba(204, 204, 204, 0.5); /* Adjusted opacity for disabled state */
+  cursor: not-allowed;
+}
+
+.time-settings {
+  margin-top: 30px; /* Increased space above settings */
+}
+
+.time-settings input {
+  font-size: 18px;
+  padding: 10px; /* Increased padding for better usability */
+  width: 100px;
+  margin-right: 10px;
+  border: none; /* Removed default border */
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
+}
+
+.time-settings button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #4caf50; /* Primary color */
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.time-settings button:hover {
+  background-color: #45a049; /* Darker shade on hover */
+}

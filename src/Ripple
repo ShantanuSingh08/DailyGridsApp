@@ -1,0 +1,21 @@
+// RippleContext.js
+import React, { createContext, useContext, useState } from 'react';
+
+// Create a Context for the ripple effect
+const RippleContext = createContext();
+
+// Create a Provider component
+export const RippleProvider = ({ children }) => {
+  const [isRippleEnabled, setIsRippleEnabled] = useState(true); // Default ripple state
+
+  return (
+    <RippleContext.Provider value={{ isRippleEnabled, setIsRippleEnabled }}>
+      {children}
+    </RippleContext.Provider>
+  );
+};
+
+// Custom hook to use the Ripple context
+export const useRipple = () => {
+  return useContext(RippleContext);
+};

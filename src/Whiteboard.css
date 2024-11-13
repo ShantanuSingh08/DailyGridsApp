@@ -1,0 +1,84 @@
+.whiteboard-container {
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow */
+    padding-top: 0% ;
+  }
+    
+  .whiteboard-canvas {
+    position: absolute;
+    padding: 0%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* White background */
+    cursor: crosshair; /* Change cursor to crosshair for drawing */
+  }
+  
+  .toolbox {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 50px; /* Rounded corners for the toolbox */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .toolbox-icon {
+    margin: 0 5px;
+    padding: 10px;
+    font-size: 24px;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.3s;
+    border-radius: 50%; /* Make the icon circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Width and height for the circle */
+    height: 40px;
+    background-color: #e0e0e0; /* Background color for the circle */
+  }
+  
+  .toolbox-icon:hover {
+    color: #f0a500; /* Change color on hover */
+    background-color: #d0d0d0; /* Change background on hover */
+  }
+  
+  .toolbox-icon.active {
+    color: #f0a500; /* Active tool color */
+    background-color: #c0c0c0; /* Background color when active */
+  }
+  
+  /* Style for the color picker input to look like a circle */
+  .toolbox input[type="color"] {
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none; /* Remove default styling */
+    border: none; /* Remove border */
+    width: 40px; /* Width for the color circle */
+    height: 40px; /* Height for the color circle */
+    border-radius: 50%; /* Make it circular */
+    background-color: #e0e0e0; /* Background color for the circle */
+    cursor: pointer; /* Change cursor to pointer */
+    margin: 0 10px;
+  }
+  
+  .toolbox input[type="color"]::-webkit-color-swatch {
+    border-radius: 50%; /* Make the color swatch circular in Chrome */
+  }
+  
+  .toolbox input[type="color"]::-moz-color-swatch {
+    border-radius: 50%; /* Make the color swatch circular in Firefox */
+  }
+  
+  .toolbox input[type="color"]::-ms-color-swatch {
+    border-radius: 50%; /* Make the color swatch circular in Edge */
+  }
+  
