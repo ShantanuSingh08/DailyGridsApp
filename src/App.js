@@ -54,6 +54,9 @@ function App() {
 
   //Appointment Reminder
   useEffect(() => {
+
+    document.title = "Daily Grids"; 
+
     const fetchEvents = async () => {
       try {
         const response = await fetch(`https://studyplanner1.onrender.com/api/events/${userId}`);
@@ -85,8 +88,6 @@ function App() {
     };
     const interval = setInterval(checkForUpcomingEvents, 600000); 
     return () => clearInterval(interval);
-
-     document.title = "Daily Grids"; 
 
   }, [events]);
 
