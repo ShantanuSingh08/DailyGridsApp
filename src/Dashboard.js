@@ -275,17 +275,7 @@ const Dashboard = ({ bgImage }) => {
                   <h3>Subscription & Billing</h3>
                   <h4> Looks like you encountered our upcoming feature!!</h4>
 
-                 /* <div className="input-group">
-                    <h4>Manage Subscription Plans</h4>
-                    <button className="Buttons" onClick={toggleSubscription}>
-                      {isSubscribed ? 'Deactivate Subscription' : 'Activate Subscription'}
-                    </button>
-                    <h4>Payment Methods</h4>
-                    <button className="Buttons">Add Payment Method</button>
-                    <h4>Billing History & Invoices</h4>
-                    <button className="Buttons">View Billing History</button>
-                  </div> */
-                </section>
+                 </section>
 
                 {/* Help & Support Section */}
                 <section className="section" id="help-support">
@@ -365,15 +355,7 @@ const Dashboard = ({ bgImage }) => {
               <h3>Subscription & Billing</h3>
               <div className="input-group">
                    <h4> Looks like you encountered our upcoming feature!!</h4>
-                // <h4>Manage Subscription Plans</h4>
-                // <button className="Buttons" onClick={toggleSubscription}>
-                //   {isSubscribed ? 'Deactivate Subscription' : 'Activate Subscription'}
-                // </button>
-                // <h4>Payment Methods</h4>
-                // <button className="Buttons">Add Payment Method</button>
-                // <h4>Billing History & Invoices</h4>
-                // <button className="Buttons">View Billing History</button>
-              </div>
+               </div>
             </section>
 
             {/* Help & Support Section */}
