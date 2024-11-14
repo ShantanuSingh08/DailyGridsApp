@@ -273,17 +273,18 @@ const Dashboard = ({ bgImage }) => {
                 {/* Subscription & Billing Section */}
                 <section className="section" id="subscription-billing">
                   <h3>Subscription & Billing</h3>
-                  <div className="input-group">
-                    <h4> Looks like you encountered our upcoming feature!!</h4>
-                    // <h4>Manage Subscription Plans</h4>
-                    // <button className="Buttons" onClick={toggleSubscription}>
-                    //   {isSubscribed ? 'Deactivate Subscription' : 'Activate Subscription'}
-                    // </button>
-                    // <h4>Payment Methods</h4>
-                    // <button className="Buttons">Add Payment Method</button>
-                    // <h4>Billing History & Invoices</h4>
-                    // <button className="Buttons">View Billing History</button>
-                  </div>
+                  <h4> Looks like you encountered our upcoming feature!!</h4>
+
+                 /* <div className="input-group">
+                    <h4>Manage Subscription Plans</h4>
+                    <button className="Buttons" onClick={toggleSubscription}>
+                      {isSubscribed ? 'Deactivate Subscription' : 'Activate Subscription'}
+                    </button>
+                    <h4>Payment Methods</h4>
+                    <button className="Buttons">Add Payment Method</button>
+                    <h4>Billing History & Invoices</h4>
+                    <button className="Buttons">View Billing History</button>
+                  </div> */
                 </section>
 
                 {/* Help & Support Section */}
