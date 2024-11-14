@@ -85,6 +85,9 @@ function App() {
     };
     const interval = setInterval(checkForUpcomingEvents, 600000); 
     return () => clearInterval(interval);
+
+     document.title = "Daily Grids"; 
+
   }, [events]);
 
 
