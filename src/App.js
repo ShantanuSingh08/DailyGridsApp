@@ -5,8 +5,6 @@ import notificationSound from './assets/notification.wav';
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 
 
-
-
 import Sidebar from './Sidebar';
 import PomodoroTimer from './PomodoroTimer';
 import StudyPlanner from './StudyPlanner';
