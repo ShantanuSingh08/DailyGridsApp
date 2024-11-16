@@ -8,16 +8,22 @@ import rainandthunderpiano from './assets/rainandthunderpiano.mp3';
 import rainmind from './assets/rainmind.mp3';
 import { HiOutlineSpeakerWave } from "react-icons/hi2";
 import { HiOutlineSpeakerXMark } from "react-icons/hi2";
+import { useNavigate } from 'react-router-dom';
+import { PiCrownSimpleBold } from "react-icons/pi";
+
+
 
 
 
 const HomePage = ({ bgImage, onBackgroundChange }) => {
+  const navigate = useNavigate(); 
   const { isRippleEnabled, setIsRippleEnabled } = useRipple(); 
   const [currentTime, setCurrentTime] = useState(new Date().toLocaleTimeString());
   const [audio, setAudio] = useState(null); 
   const [isPlayingSound, setIsPlayingSound] = useState(false);
   const [selectedSound, setSelectedSound] = useState('');
   const [volume] = useState(0.5);
+  
 
   const backgrounds = [
     { id: 1, label: 'Background 1', value: 'bg1' },
@@ -80,6 +86,10 @@ const HomePage = ({ bgImage, onBackgroundChange }) => {
   };
 
 
+    const handleClick = () => {
+      navigate('/subscribe'); 
+    };
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTime(new Date().toLocaleTimeString());
@@ -97,7 +107,7 @@ const HomePage = ({ bgImage, onBackgroundChange }) => {
         >
           {({ pause, play }) => (
             <div className="container">
-              <div className='Header'>Welcome to Daily Grids</div><div className='Account'><MdAccountCircle /></div> 
+              <div className='Header'>Welcome to Daily Grids</div><div className='Account'><PiCrownSimpleBold onClick={handleClick} /></div> 
               <div className="clock">{currentTime}</div>
               <div className="settings-container">
                 <div className="background-selector">
@@ -137,7 +147,8 @@ const HomePage = ({ bgImage, onBackgroundChange }) => {
         </WaterWave>
       ) : (
         <div className="container" style={{ width: '100%', height: '100%', backgroundSize: 'cover', backgroundImage: `url(${bgImage})` }}>
-              <div className='Header'>Welcome to Daily Grids</div><div className='Account'><MdAccountCircle /></div> 
+              <div className='Header'>Welcome to Daily Grids</div><div className='Account'><PiCrownSimpleBold onClick={handleClick} style={{ paddingLeft: '15vw' }} />
+              </div> 
               <div className="clock">{currentTime}</div>
               <div className="settings-container">
                 <div className="background-selector">
