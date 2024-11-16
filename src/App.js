@@ -17,7 +17,6 @@ import Account from './Account';
 import Stats from './Stats';
 import Dashboard from './Dashboard';
 import SubscriptionPage from './SubscriptionPage';
-import PaymentPage from './PaymentPage';
 
 import { RippleProvider } from './RippleContext';
 
@@ -119,7 +118,6 @@ function App() {
               <Route path="/dashboard" element={<Dashboard bgImage={selectedBg} />} />
               <Route path="/stats" element={<Stats bgImage={selectedBg} />} />
               <Route path="/subscribe" element={<SubscriptionPage bgImage={selectedBg}/>} />
-              <Route path="/payment" element={<PaymentPage bgImage={selectedBg}/>} />
 
             </Routes>
           </div>
