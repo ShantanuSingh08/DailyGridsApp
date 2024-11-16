@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import notificationSound from './assets/notification.wav';
+import { PayPalScriptProvider } from "@paypal/react-paypal-js";
+
 
 
 
@@ -14,6 +16,9 @@ import Notes from './Notes';
 import Account from './Account';
 import Stats from './Stats';
 import Dashboard from './Dashboard';
+import SubscriptionPage from './SubscriptionPage';
+import PaymentPage from './PaymentPage';
+
 import { RippleProvider } from './RippleContext';
 
 import bg1 from './assets/bg1.jpg';
@@ -34,6 +39,11 @@ function App() {
   const userId = localStorage.getItem('userId');
   const notification = new Audio(notificationSound);
 
+  const initialOptions = {
+    "client-id": "Aasv0BWvuh2R2LNm5wFTQw0PROfLYbC8V6OZeLFDAJj5NiJafwIiQvy9J4z8HLhDL3EXlr5p6u_lewlX",
+    "vault": true,
+    "intent": "subscription",
+  };
 
   const backgroundImages = {
     bg1: bg1,
@@ -54,7 +64,6 @@ function App() {
 
   //Appointment Reminder
   useEffect(() => {
-
     document.title = "Daily Grids"; 
 
     const fetchEvents = async () => {
@@ -88,11 +97,13 @@ function App() {
     };
     const interval = setInterval(checkForUpcomingEvents, 600000); 
     return () => clearInterval(interval);
-
   }, [events]);
 
 
+
   return (
+    <PayPalScriptProvider options={initialOptions}>
+
     <RippleProvider>
       <BrowserRouter>
         <div className="content">
@@ -107,11 +118,16 @@ function App() {
               <Route path="/account" element={<Account bgImage={selectedBg} />} />
               <Route path="/dashboard" element={<Dashboard bgImage={selectedBg} />} />
               <Route path="/stats" element={<Stats bgImage={selectedBg} />} />
+              <Route path="/subscribe" element={<SubscriptionPage bgImage={selectedBg}/>} />
+              <Route path="/payment" element={<PaymentPage bgImage={selectedBg}/>} />
+
             </Routes>
           </div>
         </div>
       </BrowserRouter>
     </RippleProvider>
+    </PayPalScriptProvider>
+
   );
 }
 
