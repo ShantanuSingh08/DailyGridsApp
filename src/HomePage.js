@@ -145,6 +145,7 @@ const HomePage = ({ bgImage, onBackgroundChange }) => {
         </WaterWave>
       ) : (
         <>
+        <div className="container" style={{ width: '100%', height: '100%', backgroundSize: 'cover', backgroundImage: `url(${bgImage})` }}>
           <div className="Header">Welcome to Daily Grids</div>
           <div className="clock">{currentTime}</div>
           <div className="settings-container">
@@ -176,6 +177,7 @@ const HomePage = ({ bgImage, onBackgroundChange }) => {
         </>
       )}
     </div>
+   </div>
   );
 };
 
