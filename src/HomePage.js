@@ -175,13 +175,9 @@ const HomePage = ({ bgImage, onBackgroundChange }) => {
                     <option value="true">On</option>
                     <option value="false">Off</option>
                   </select>
-
                    </div>
-
-
               </div>
-              
-            </div>
+        </div>
       )}
     </>
   );
