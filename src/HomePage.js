@@ -98,15 +98,15 @@ const HomePage = ({ bgImage, onBackgroundChange }) => {
     return () => clearInterval(interval);
   }, []);
 
-  return (
-    <>
+   return (
+    <div className="container" style={{ width: '100%', height: '100%' }}>
       {isRippleEnabled ? (
         <WaterWave
           imageUrl={bgImage}
           style={{ width: '100%', height: '100%', backgroundSize: 'cover' }}
         >
           {({ pause, play }) => (
-            <div className="container">
+            <>
               <div className='Header'>Welcome to Daily Grids</div>
               <div className="clock">{currentTime}</div>
               <div className="settings-container">
@@ -123,9 +123,8 @@ const HomePage = ({ bgImage, onBackgroundChange }) => {
                     ))}
                   </select>
                 </div>
-
                 <div className="ripple-selector">
-                  <h3> Toggle Zen Mode:</h3>
+                  <h3>Toggle Zen Mode:</h3>
                   <select
                     className="custom-dropdown"
                     onChange={(e) => handleZenModeToggle(e.target.value === 'true')}
@@ -134,56 +133,49 @@ const HomePage = ({ bgImage, onBackgroundChange }) => {
                     <option value="true">On</option>
                     <option value="false">Off</option>
                   </select>
-
-                 </div>
+                </div>
               </div>
               <div>
                 <button className="Mute" onClick={toggleMute}>
-                      {isPlayingSound ? <HiOutlineSpeakerWave /> : <HiOutlineSpeakerXMark />}
-                      </button>                       
-                      </div>
-            </div>
+                  {isPlayingSound ? <HiOutlineSpeakerWave /> : <HiOutlineSpeakerXMark />}
+                </button>
+              </div>
+            </>
           )}
         </WaterWave>
       ) : (
-        <div className="container" style={{ width: '100%', height: '100%', backgroundSize: 'cover', backgroundImage: `url(${bgImage})` }}>
-              <div className='Header'>Welcome to Daily Grids</div>
-              </div> 
-              <div className="clock">{currentTime}</div>
-              <div className="settings-container">
-                <div className="background-selector">
-                  <h3>Select a Background:</h3>
-                  <select
-                    className="custom-dropdown"
-                    onChange={(e) => onBackgroundChange(e.target.value)}
-                  >
-                    {backgrounds.map((bg) => (
-                      <option key={bg.id} value={bg.value}>
-                        {bg.label}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                <div className="ripple-selector">
-                  <h3> Toggle Zen Mode:</h3>
-                  <select
-                    className="custom-dropdown"
-                    onChange={(e) => handleZenModeToggle(e.target.value === 'true')}
-                    value={isRippleEnabled ? 'true' : 'false'}
-                  >
-                    <option value="true">On</option>
-                    <option value="false">Off</option>
-                  </select>
-
-                   </div>
-
-
-              </div>
-              
+        <>
+          <div className="Header">Welcome to Daily Grids</div>
+          <div className="clock">{currentTime}</div>
+          <div className="settings-container">
+            <div className="background-selector">
+              <h3>Select a Background:</h3>
+              <select
+                className="custom-dropdown"
+                onChange={(e) => onBackgroundChange(e.target.value)}
+              >
+                {backgrounds.map((bg) => (
+                  <option key={bg.id} value={bg.value}>
+                    {bg.label}
+                  </option>
+                ))}
+              </select>
             </div>
+            <div className="ripple-selector">
+              <h3>Toggle Zen Mode:</h3>
+              <select
+                className="custom-dropdown"
+                onChange={(e) => handleZenModeToggle(e.target.value === 'true')}
+                value={isRippleEnabled ? 'true' : 'false'}
+              >
+                <option value="true">On</option>
+                <option value="false">Off</option>
+              </select>
+            </div>
+          </div>
+        </>
       )}
-    </>
+    </div>
   );
 };
 
