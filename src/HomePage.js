@@ -107,7 +107,7 @@ const HomePage = ({ bgImage, onBackgroundChange }) => {
         >
           {({ pause, play }) => (
             <div className="container">
-              <div className='Header'>Welcome to Daily Grids</div><div className='Account'><PiCrownSimpleBold onClick={handleClick} /></div> 
+              <div className='Header'>Welcome to Daily Grids</div><div className='Account'>
               <div className="clock">{currentTime}</div>
               <div className="settings-container">
                 <div className="background-selector">
@@ -147,7 +147,7 @@ const HomePage = ({ bgImage, onBackgroundChange }) => {
         </WaterWave>
       ) : (
         <div className="container" style={{ width: '100%', height: '100%', backgroundSize: 'cover', backgroundImage: `url(${bgImage})` }}>
-              <div className='Header'>Welcome to Daily Grids</div><div className='Account'><PiCrownSimpleBold onClick={handleClick} style={{ paddingLeft: '15vw' }} />
+              <div className='Header'>Welcome to Daily Grids</div><div className='Account'>
               </div> 
               <div className="clock">{currentTime}</div>
               <div className="settings-container">
