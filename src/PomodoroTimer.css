@@ -1,75 +1,122 @@
 .pomodoro-timer {
   color: #ffffff;
   text-align: center;
-  font-family: 'Arial', sans-serif; /* Updated font for better aesthetics */
-  padding: 20px; /* Added padding for better spacing */
+  font-family: 'Arial', sans-serif; /* Modern font */
+  padding: 2%; /* Responsive padding */
 }
 
 .pomodoro-timer-content {
   color: #ffffff;
   text-align: center;
-  font-family: 'Arial', sans-serif; /* Updated font for better aesthetics */
-  padding-top: 15%; /* Added padding for better spacing */
+  font-family: 'Arial', sans-serif;
+  padding-top: 15%; /* Adjusted for vertical spacing */
 }
 
 .timer-display h1 {
-  font-size: 60px; /* Increased font size for better visibility */
+  font-size: 4vw; /* Scales with screen size */
   margin: 20px 0;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Added shadow for depth */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .timer-controls {
   display: flex;
-  justify-content: center; /* Center buttons */
-  margin-top: 20px; /* Add space above the controls */
+  justify-content: center;
+  margin-top: 2%; /* Use percentages for spacing */
 }
 
 .timer-controls button {
-  margin: 0 10px; /* Adjusted margin for better spacing */
-  padding: 12px 24px; /* Increased padding for a more substantial button */
-  font-size: 16px;
+  margin: 0 1%; /* Responsive spacing */
+  padding: 1rem 2rem; /* Relative padding */
+  font-size: 1rem;
   cursor: pointer;
   border: none;
-  background-color: #4caf50; /* Primary color */
+  background-color: #4caf50;
   color: white;
-  border-radius: 5px; /* Slightly larger border radius */
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .timer-controls button:hover {
-  background-color: #45a049; /* Darker shade on hover */
+  background-color: #45a049;
 }
 
 .timer-controls button:disabled {
-  background-color: rgba(204, 204, 204, 0.5); /* Adjusted opacity for disabled state */
+  background-color: rgba(204, 204, 204, 0.5);
   cursor: not-allowed;
 }
 
 .time-settings {
-  margin-top: 30px; /* Increased space above settings */
+  margin-top: 3%; /* Use percentages for spacing */
 }
 
 .time-settings input {
-  font-size: 18px;
-  padding: 10px; /* Increased padding for better usability */
-  width: 100px;
-  margin-right: 10px;
-  border: none; /* Removed default border */
-  border-radius: 4px; /* Rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
+  font-size: 1.2rem;
+  padding: 0.8rem; /* Relative padding */
+  width: 8rem; /* Adjusted for better responsiveness */
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .time-settings button {
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
   border: none;
-  background-color: #4caf50; /* Primary color */
+  background-color: #4caf50;
   color: white;
   border-radius: 4px;
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  transition: background-color 0.3s ease;
 }
 
 .time-settings button:hover {
-  background-color: #45a049; /* Darker shade on hover */
+  background-color: #45a049;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .timer-display h1 {
+    font-size: 6vw; /* Increase font size for smaller screens */
+  }
+
+  .timer-controls button {
+    padding: 0.8rem 1.5rem; /* Reduce padding */
+    font-size: 0.9rem; /* Slightly smaller font */
+  }
+
+  .time-settings input {
+    font-size: 1rem;
+    padding: 0.6rem;
+    width: 7rem; /* Reduce width for smaller screens */
+  }
+
+  .time-settings button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pomodoro-timer-content {
+    padding-top: 10%; /* Reduce vertical spacing */
+  }
+
+  .timer-display h1 {
+    font-size: 7vw; /* Further increase font size */
+  }
+
+  .timer-controls {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Add spacing between stacked buttons */
+  }
+
+  .timer-controls button {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .time-settings input {
+    width: 6rem; /* Further reduce input width */
+  }
 }
