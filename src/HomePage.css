@@ -1,91 +1,91 @@
+/* Reset */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     overflow: hidden;
-    }
+}
 
-.background{
+/* General Background */
+.background {
     padding-right: 10%;
 }
+
+/* Content Container */
 .content {
     display: flex;
     background-size: cover;
     background-repeat: no-repeat;
-    
     margin: 0;
     width: 100vw;
-    height: 100vh; 
-    overflow: hidden; 
+    height: 100vh;
+    overflow: hidden;
     position: fixed;
-    z-index: 1; 
-    color: rgb(255, 255, 255); 
+    z-index: 1;
+    color: #fff;
     text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+/* Header Section */
 .Header {
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 30px;
     padding-left: 18%;
-    font-style: bold;
+    font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 60vw;
     float: left;
-    height: 10vh; 
-    overflow: hidden; 
+    height: 10vh;
+    overflow: hidden;
     position: fixed;
-    z-index: 1; 
-    color: rgb(255, 255, 255); 
+    z-index: 1;
+    color: #fff;
     text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-size: 30px;
 }
 
+/* Account Section */
 .Account {
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 40px;
     padding-top: 30px;
     padding-left: 20%;
-    font-style: bold;
+    font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 60vw;
     float: left;
-    height: 10vh; 
+    height: 10vh;
     margin-left: 620px;
-    overflow: hidden; 
+    overflow: hidden;
     position: fixed;
-    z-index: 1; 
-    color: rgb(255, 255, 255); 
+    z-index: 1;
+    color: #fff;
     text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-.Account :hover{
+.Account:hover {
     color: #f0a500;
 }
 
-.background-selector{
-    color: rgb(255, 255, 255);
-     
+/* Background Selector */
+.background-selector {
+    color: #fff;
 }
 
+/* Custom Dropdown */
 .custom-dropdown {
     width: 200px;
     padding: 10px;
     font-size: 16px;
     border-radius: 80px;
     border: 2px solid #ccc;
-    background-color: rgba(0, 0, 0, 0); 
-    color: #ffffff;
+    background-color: transparent;
+    color: #fff;
     appearance: none;
     outline: none;
     transition: all 0.3s ease;
@@ -93,87 +93,156 @@ body, html {
     text-align: center;
 }
 
-.dropdown-list {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0); 
-    padding: 0;
-    margin: 0;
-    border-radius: 0 0 12px 12px; 
-    z-index: 1000;
-}
-
 .custom-dropdown:after {
     content: '▼';
     float: right;
     padding-right: 10px;
 }
-  
+
 .custom-dropdown:hover {
-    background-color: rgba(0, 0, 0, 0); 
     border-color: #888;
 }
-  
-  .custom-dropdown:focus {
-    border-color: black; 
-    box-shadow: 0 0 5px rgb(153, 0, 255);
-    background-color: rgba(0, 0, 0, 0); 
-  }
 
 .custom-dropdown:focus {
-    border-color: black; 
+    border-color: black;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
+/* Dropdown Options */
 .custom-dropdown option {
-    background-color: rgba(0, 0, 0, 0); 
-    color: #000000;
+    background-color: transparent;
+    color: #000;
     border-radius: 8px;
 }
 
-.custom-dropdown option:hover {
-    background-color: rgba(0, 0, 0, 0); 
-}
-
-.ripple-selector{
+/* Ripple Selector */
+.ripple-selector {
     color: azure;
 }
 
+/* Settings Container */
 .settings-container {
-    display: flex; 
-    align-items: center; 
-    gap: 69%; 
+    display: flex;
+    align-items: center;
+    gap: 5%;
     padding-top: 19%;
     padding-left: 5%;
-  }
-  
-  .custom-dropdown {
-    margin-left: 10px; 
-  }
+}
 
-  .clock {
+.custom-dropdown {
+    margin-left: 10px;
+}
+
+/* Clock Section */
+.clock {
     padding-top: 22%;
-    font-size: 48px;  
-    font-family: 'Courier New', Courier, monospace;  
-    color: #ffffff;  
-    margin-bottom: 20px;  
-    text-align: center;  
-  }
-  
-  .Mute{
+    font-size: 48px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Mute Button */
+.Mute {
     background-color: transparent;
     border: none;
     cursor: pointer;
     font-size: 30px;
-    color: #ffffff; 
+    color: #fff;
     position: absolute;
-    margin-left: 44%; 
-    bottom: 60px;  
+    margin-left: 44%;
+    bottom: 60px;
 }
-.Mute:hover{
-    background-color: transparent;
-    color: #888; 
+
+.Mute:hover {
+    color: #888;
 }
-  
+
+/* Responsive Design */
+
+/* Tablet Adjustments */
+@media (max-width: 1024px) {
+    .Header, .Account {
+        font-size: 24px;
+        width: 80vw;
+        text-align: center;
+    }
+
+    .Account {
+        margin-left: 0;
+        padding-left: 10%;
+    }
+
+    .custom-dropdown {
+        width: 180px;
+        font-size: 14px;
+    }
+
+    .clock {
+        font-size: 36px;
+        padding-top: 20%;
+    }
+
+    .Mute {
+        font-size: 26px;
+        margin-left: 40%;
+    }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .Header, .Account {
+        width: 100%;
+        font-size: 20px;
+        padding-left: 5%;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .settings-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .custom-dropdown {
+        width: 150px;
+        font-size: 14px;
+    }
+
+    .clock {
+        font-size: 28px;
+    }
+
+    .Mute {
+        font-size: 20px;
+        margin-left: 0;
+        bottom: 40px;
+    }
+}
+
+/* Small Mobile Adjustments */
+@media (max-width: 480px) {
+    .Header, .Account {
+        font-size: 16px;
+        padding-left: 2%;
+    }
+
+    .custom-dropdown {
+        width: 120px;
+        font-size: 12px;
+    }
+
+    .clock {
+        font-size: 20px;
+    }
+
+    .Mute {
+        font-size: 18px;
+        bottom: 20px;
+    }
+}
