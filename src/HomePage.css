@@ -191,6 +191,12 @@ body, html {
     }
 }
 
+/* Ripple Selector */
+.ripple-selector {
+    color: azure;
+    padding-left: 0vw;
+}
+
 /* Mobile Adjustments */
 @media (max-width: 768px) {
     .Header, .Account {
