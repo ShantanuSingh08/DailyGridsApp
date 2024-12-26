@@ -237,7 +237,6 @@ body, html {
 @media (max-width: 480px) {
     .Header, .Account {
         font-size: 16px;
-        padding-left: 2%;
     }
 
     .custom-dropdown {
