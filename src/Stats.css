@@ -127,6 +127,11 @@
     height: 20px; /* Reduce height for smaller screens */
   }
 
+  .focus-time-stats p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  padding-left: 0px;
+}
   .goal-met {
     padding: 8px 16px; /* Compact button styling */
     font-size: 0.9rem; /* Smaller font size */
