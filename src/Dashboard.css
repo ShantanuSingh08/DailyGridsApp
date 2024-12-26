@@ -1,33 +1,30 @@
-/* General Dashboard Layout */
+/* Dashboard Layout */
 .dashboard {
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping for smaller screens */
   font-family: Arial, sans-serif;
   color: #fff;
-  min-height: 100vh;
-  padding: 5%;
-  gap: 20px; /* Adds spacing between menu and content */
+  height: 100vh;
+  padding-left: 5%;
 }
 
-/* Sidebar Menu */
-.menu {
-  flex: 1 1 250px; /* Sidebar takes a minimum width of 250px, adjusts on resize */
-  max-width: 300px;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 8px;
+
+.menu{
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 .menu h2 {
   font-size: 1.5em;
   color: #fff;
-  margin-bottom: 20px;
+  padding-top: 120%;
+  padding-left: 2%;
+
 }
 
 .menu ul {
   list-style-type: none;
   padding: 0;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 .menu ul li {
@@ -40,29 +37,78 @@
   color: #fff;
 }
 
-/* Main Content */
 .main-content {
-  flex: 3 1 600px; /* Content area adjusts dynamically */
+  flex: 1;
   padding: 20px;
+  margin: 1%;
   background-color: rgba(0, 0, 0, 0.5);
+  overflow-y: scroll;
+  border-radius: 25px;
+}
+
+.section {
+  background-color: #333;
+  padding: 20px;
+  margin-bottom: 20px;
   border-radius: 8px;
-  overflow-y: auto;
 }
 
-.main-content::-webkit-scrollbar {
-  width: 8px;
+.section h3 {
+  font-size: 1.4em;
+  color: #fff;
 }
 
-.main-content::-webkit-scrollbar-thumb {
-  background-color: #555;
-  border-radius: 4px;
+.section p {
+  color: #b3b3b3;
+  margin: 10px 0;
 }
 
-.main-content::-webkit-scrollbar-thumb:hover {
-  background-color: #fff;
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-/* Buttons */
+.input-group label {
+  color: #b3b3b3;
+  font-size: 0.9em;
+}
+
+.input-group input {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: none;
+  background-color: #444;
+  color: #fff;
+}
+
+
+
+.DelUser {
+    color: #ffffff; 
+    background-color: #ff4f4f; 
+    border: 2px solid #ff0000; 
+    border-radius: 8px; 
+    font-weight: bold;
+    padding: 10px 20px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    margin-left: 20%;
+}
+
+.DelUser:hover {
+    background-color: #ff1f1f; 
+    transform: scale(1.05); 
+}
+
+.DelUser:active {
+    background-color: #cc0000; 
+    transform: scale(0.98); 
+}
+
+
 button {
   padding: 10px 15px;
   margin-top: 10px;
@@ -77,49 +123,130 @@ button:hover {
   background-color: #666;
 }
 
-/* Responsive Layout Adjustments */
-@media (max-width: 1024px) {
-  .menu {
-    flex: 1 1 200px; /* Shrinks menu width for tablets */
-  }
-
-  .main-content {
-    flex: 2 1 400px; /* Adjusts content width for tablets */
-  }
+.main-content::-webkit-scrollbar-track {
+    border-radius: 10px;
+    margin: 20px 0;
 }
 
-@media (max-width: 768px) {
-  .dashboard {
-    flex-direction: column; /* Stacks menu and content vertically */
-  }
-
-  .menu {
-    flex: 1 1 auto;
-    max-width: 100%; /* Full-width menu */
-    margin-bottom: 20px; /* Adds spacing below menu */
-  }
-
-  .main-content {
-    flex: 1 1 auto;
-    max-width: 100%; /* Full-width content */
-  }
+.main-content::-webkit-scrollbar-thumb {
+    background-color: #555; 
+    border-radius: 10px;
 }
 
-@media (max-width: 480px) {
-  .menu h2 {
-    font-size: 1.2em; /* Reduces font size for smaller screens */
-  }
+.main-content::-webkit-scrollbar-thumb:hover {
+    background-color: #ffffffa2; 
+}
 
-  .menu ul li {
-    font-size: 0.9em; /* Adjusts menu item font size */
+.menu ul li.active {
+    color: white; 
+    font-weight: bold; 
   }
+  
+.button-group {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 10px; 
+    flex-wrap: nowrap; 
+    width: auto; 
+}
 
-  button {
-    padding: 8px 12px;
-    font-size: 0.9em; /* Smaller buttons */
-  }
+.Contact, .Report {
+    padding: 10px 20px; 
+    cursor: pointer; 
+    background-color: #45a049; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 14px; 
+    display: inline-flex; 
+    align-items: center; 
+    white-space: nowrap; 
+    text-align: center; 
+    flex-grow: 0; 
+    margin-bottom: 2%;
+}
+.Contact{
+    margin-right: 30%;
+}
 
-  .main-content {
-    padding: 15px; /* Smaller padding for main content */
+.hspace{
+    margin-right: 13%;
+    margin-left: 13%;
+}
+
+.Contact:hover, .Report:hover {
+    background-color: #275729; 
+}
+
+.Buttons{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.email-container {
+    display: flex;
+    align-items: center;
   }
+  
+  .edit-email-btn {
+    background-color: #45a049;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .email-edit-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: rgba(255, 250, 250, 0.89);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 95%;
+  }
+  
+  .send-otp-btn,
+  .confirm-email-btn,
+  .close-modal-btn {
+    background-color: #45a049;
+}
+
+.Logout {
+  color: #ffffff; 
+  background-color: #ff4f4f; 
+  border: 2px solid #ff0000; 
+  border-radius: 8px; 
+  font-weight: bold;
+  padding: 10px 20px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  margin-right: 9%;
+  margin-left: 2%;
+}
+
+.DelUser:hover {
+  background-color: #ff1f1f; 
+  transform: scale(1.05); 
+}
+
+.DelUser:active {
+  background-color: #cc0000; 
+  transform: scale(0.98); 
+}
+
+.custom-placeholder::placeholder{
+  color: white;
 }
