@@ -191,11 +191,7 @@ body, html {
     }
 }
 
-/* Ripple Selector */
-.ripple-selector {
-    color: azure;
-    padding-left: 0vw;
-}
+
 
 /* Mobile Adjustments */
 @media (max-width: 768px) {
@@ -230,6 +226,11 @@ body, html {
         margin-left: 0;
         bottom: 40px;
     }
+}
+/* Ripple Selector */
+.ripple-selector {
+    color: azure;
+    padding-left: 0vw;
 }
 
 /* Small Mobile Adjustments */
