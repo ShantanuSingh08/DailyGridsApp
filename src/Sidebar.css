@@ -1,21 +1,47 @@
 .sidebar {
-    width: 100px;
-    background-color: #333;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
+  width: 100px; /* Default width for desktop */
+  background-color: #333;
+  height: 100vh; /* Full height for all screen sizes */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  transition: width 0.3s ease; /* Smooth transition for responsiveness */
+}
+
+.sidebar-icon {
+  color: white;
+  font-size: 2rem; /* Relative font size for scalability */
+  margin-bottom: 2.5rem; /* Consistent spacing */
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s ease; /* Smooth hover and active effects */
+}
+
+.sidebar-icon:hover {
+  color: #f0a500;
+  transform: scale(1.1); /* Slight zoom on hover for interactivity */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 80px; /* Narrower sidebar for tablets */
   }
-  
+
   .sidebar-icon {
-    color: white;
-    font-size: 32px;
-    margin-bottom: 40px;
-    cursor: pointer;
-    transition: color 0.3s;
+    font-size: 1.8rem; /* Slightly smaller icons */
+    margin-bottom: 2rem; /* Adjust spacing */
   }
-  
-  .sidebar-icon:hover {
-    color: #f0a500; 
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 60px; /* Compact width for mobile */
+    padding-top: 10px; /* Reduce top padding */
   }
+
+  .sidebar-icon {
+    font-size: 1.5rem; /* Smaller icons for compact view */
+    margin-bottom: 1.5rem; /* Adjust spacing */
+  }
+}
