@@ -41,7 +41,7 @@
   flex-direction: column;
   gap: 20px;
   padding: 20px;
-  padding-top: 40px;
+  padding-top: 180px;
   padding-right: 10%;
 }
 
@@ -111,7 +111,6 @@
 
   .charts {
     padding-right: 5%; /* Adjust padding */
-    padding: 240px 10% 20px 20px;
   }
 
   .progress-container {
