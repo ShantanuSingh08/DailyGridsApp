@@ -113,7 +113,7 @@
 
   .charts {
     padding-right: 5%; /* Adjust padding */
-    padding: 30px 10% 20px 20px;
+    padding: 0px 10% 20px 20px;
   }
 
   .progress-container {
@@ -130,7 +130,7 @@
 
   .progress-container {
     height: 30px; /* Reduce height for smaller screens */
-    margin: 20px auto; /* Center-align the progress bar */
+    margin: 30px auto; /* Center-align the progress bar */
 
   }
 
