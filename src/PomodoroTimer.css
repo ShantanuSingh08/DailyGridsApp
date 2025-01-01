@@ -99,7 +99,7 @@
 
 @media (max-width: 480px) {
   .pomodoro-timer-content {
-    padding-top: 10%; /* Reduce vertical spacing */
+    padding-top: 60%; /* Reduce vertical spacing */
   }
 
   .timer-display h1 {
