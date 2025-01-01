@@ -303,7 +303,12 @@ button:hover {
     font-size: 0.9em;
     padding: 8px;
   }
-
+  
+    .hspace{
+      margin-right: 3%;
+      margin-left: 3%;
+  }
+  
   .button-group {
     flex-wrap: wrap;
     justify-content: center;
@@ -316,6 +321,10 @@ button:hover {
     padding: 8px 15px;
   }
 
+    .Contact {
+      margin-right: 5px;
+  }
+  
   .Buttons {
     margin-left: 0;
     margin-right: 0;
