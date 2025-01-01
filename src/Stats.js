@@ -181,8 +181,8 @@ const FocusTimeStats = ({ bgImage }) => {
                 <p>Daily Focus Time: {formatTime(dailyTime)}</p>
                 <p>Weekly Focus Time: {formatTime(weeklyTime)}</p>
                 <p>Monthly Focus Time: {formatTime(monthlyTime)}</p>
-                </div>
-                {/* Progress Bar for Weekly Goal */}
+
+              {/* Progress Bar for Weekly Goal */}
                 <div className="progress-container">
                   <div
                     className="progress-bar goal"
@@ -197,6 +197,8 @@ const FocusTimeStats = ({ bgImage }) => {
                 {isGoalMet && <button className="goal-met">Congratulations!</button>}
                 </div>
               </div>
+            </div>
+                
 
               <div className="charts">
                 <Bar data={last7DaysChartData} options={chartOptions} />
