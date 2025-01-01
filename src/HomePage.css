@@ -195,7 +195,7 @@ body, html {
 @media (max-width: 768px) {
     .Header, .Account {
         width: 100%;
-        font-size: 20px;
+        font-size: 30px;
         padding-left: 0px;
     }
 
@@ -236,7 +236,7 @@ body, html {
 /* Small Mobile Adjustments */
 @media (max-width: 480px) {
     .Header, .Account {
-        font-size: 16px;
+        font-size: 26px;
         padding-left: 0px;
     }
 
