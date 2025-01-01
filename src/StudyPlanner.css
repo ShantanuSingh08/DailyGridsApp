@@ -142,7 +142,12 @@ h2 {
     padding: 4px 6px;
     font-size: 0.9rem;
   }
-
+  
+  .fc .fc-toolbar.fc-header-toolbar {
+    margin-bottom: 1.5em;
+    font-size: x-small;
+  }
+  
   #submit,
   #cancel {
     padding: 8px 16px;
