@@ -270,13 +270,6 @@ const Dashboard = ({ bgImage }) => {
                   </section>
 
 
-                {/* Subscription & Billing Section */}
-                <section className="section" id="subscription-billing">
-                  <h3>Subscription & Billing</h3>
-                  <h4> Looks like you encountered our upcoming feature!!</h4>
-
-                 </section>
-
                 {/* Help & Support Section */}
                 <section className="section" id="help-support">
                   <h3>Help & Support</h3>
@@ -349,14 +342,6 @@ const Dashboard = ({ bgImage }) => {
                     <button className="save-button" onClick={handleChangePassword}>Confirm Change Pasword</button>
                   </section>
 
-
-            {/* Subscription & Billing Section */}
-            <section className="section" id="subscription-billing">
-              <h3>Subscription & Billing</h3>
-              <div className="input-group">
-                   <h4> Looks like you encountered our upcoming feature!!</h4>
-               </div>
-            </section>
 
             {/* Help & Support Section */}
             <section className="section" id="help-support">
