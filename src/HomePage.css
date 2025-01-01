@@ -40,7 +40,6 @@ body, html {
     float: left;
     height: 10vh;
     overflow: hidden;
-    position: fixed;
     z-index: 1;
     color: #fff;
     text-align: center;
