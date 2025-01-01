@@ -32,6 +32,10 @@
     font-size: 1.8rem; /* Slightly smaller icons */
     margin-bottom: 2rem; /* Adjust spacing */
   }
+  
+  .whiteboard-icon {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
