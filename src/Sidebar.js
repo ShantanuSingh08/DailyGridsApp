@@ -20,7 +20,7 @@ const Sidebar = () => {
       <div className="sidebar-icon" onClick={() => navigate(isLoggedIn ? '/planner' : '/account')}>
         <FaCalendarAlt />
       </div>
-      <div className="sidebar-icon" onClick={() => navigate(isLoggedIn ? '/whiteboard' : '/account')}>
+      <div className="sidebar-icon whiteboard-icon" onClick={() => navigate(isLoggedIn ? '/whiteboard' : '/account')}>
         <FaChalkboard />
       </div>
       <div className="sidebar-icon" onClick={() => navigate(isLoggedIn ? '/notes' : '/account')}>
