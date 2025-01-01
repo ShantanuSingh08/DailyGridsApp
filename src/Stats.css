@@ -52,6 +52,7 @@
 .progress-container {
   position: relative; /* Adjust for better positioning */
   margin: 20px auto; /* Center-align the progress bar */
+  margin-top: 10%;
   width: 80%; /* Set a relative width for responsiveness */
   max-width: 300px; /* Cap the width for large screens */
   height: 50px;
@@ -116,6 +117,7 @@
 
   .progress-container {
     width: 90%; /* Make progress bar fill available width */
+    margin-top: 0px;
   }
 }
 
