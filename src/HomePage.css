@@ -208,8 +208,9 @@ body, html {
     }
 
     .settings-container {
-        flex-direction: column;
         gap: 20px;
+        padding-right: 23px;
+        padding-top: 60%;
     }
 
     .custom-dropdown {
@@ -218,8 +219,8 @@ body, html {
     }
 
     .clock {
-        font-size: 28px;
-        padding-top: 62%;
+        font-size: 43px;
+        padding-top: 115%;
     }
 
     .Mute {
@@ -247,7 +248,7 @@ body, html {
     }
 
     .clock {
-        font-size: 20px;
+        font-size: 43px;
     }
 
     .Mute {
