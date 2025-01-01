@@ -30,9 +30,9 @@
 
 .stats-text {
   flex: 1;
-  padding: 190px;
+  padding: 0px;
   padding-top: 20%;
-  text-align: left; /* Align text for better readability */
+  text-align: centre; /* Align text for better readability */
 }
 
 .charts {
