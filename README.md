@@ -42,8 +42,9 @@ Setup
 
 Clone the repository:
 
-git clone https://github.com/your-username/DailyGrids.git
-cd DailyGrids
+```git clone https://github.com/your-username/DailyGrids.git
+
+cd DailyGrids ```
 
 Install dependencies:
 
