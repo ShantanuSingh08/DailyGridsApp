@@ -90,6 +90,6 @@ Update documentation if needed.
 
 Issues: GitHub Issues
 
-Email: your-email@example.com
+Email: shantanusingh1808@gmail.com
 
 
