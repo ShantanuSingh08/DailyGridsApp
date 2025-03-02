@@ -46,17 +46,20 @@ git clone https://github.com/your-username/DailyGrids.git
 
 cd DailyGrids 
 
-Install dependencies:
+#### Install dependencies:
 
 npm install
 
-Set up environment variables:
+#### Set up environment variables:
+
 Create a .env file in the root directory and add:
 
 MONGO_URI=your-mongodb-uri
 JWT_SECRET=your-secret-key
 
-Run the development server:
+#### Run the development server:
+
+npm start
 
 ### Contributing
 We welcome contributions! 🎉 To contribute:
