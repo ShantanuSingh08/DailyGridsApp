@@ -38,7 +38,7 @@ Node.js (>=16.x)
 
 MongoDB (Local or Cloud)
 
-Setup
+### Setup
 
 Clone the repository:
 
