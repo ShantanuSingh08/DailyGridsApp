@@ -32,13 +32,13 @@ Hosting: Render, Vercel
 
 ### Installation
 
-Prerequisites
+#### Prerequisites
 
-Node.js (>=16.x)
+   Node.js (>=16.x)
+   
+   MongoDB (Local or Cloud)
 
-MongoDB (Local or Cloud)
-
-### Setup
+#### Setup
 
 Clone the repository:
 
